@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Techdigi</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+        <link href=" {% static "css/bootstrap-icons.css" %}"  rel="stylesheet">
+        <link href=" {% static "css/templatemo-kind-heart-charity.css" %}" rel="stylesheet">
+        <link href=" {% static "css/style.css" %}" rel="stylesheet">
+
+        <style>
+                    .navbar{
+                        font-family: var(--body-font-family);
+                        background-color: var(--section-bg-color)
+                        
+                    }    
+                .btn{
+                    background-color:#03305c;
+                    color:#fff;
+                    border-radius:12px;
+                }
+                .btn_a{ 
+                    color:#fff;
+                }
+                .btn:hover{
+                    background-color:#fff;
+                    color:#1F1717;
+                    border:0.5px solid #03305c;
+                }
+                .btn_a:hover{
+                    color:black;
+                }
+               
+
+                        
+                /*---------------------------------------
+                FEATURE BLOCK              
+                -----------------------------------------*/
+                .featured-block {
+                text-align: center;
+                transition: all 0.5s ease;
+                min-height: 256px;
+                padding: 15px;
+                }
+
+                .featured-block:hover {
+                background: var(--white-color);
+                border-radius: var(--border-radius-medium);
+                box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+                }
+
+                .featured-block:hover .featured-block-image {
+                transform: scale(0.75);
+                }
+
+                .featured-block-image {
+                display: block;
+                margin: auto;
+                transition: all 0.5s;
+                }
+
+                .featured-block:hover .featured-block-text {
+                margin-top: 0;
+                }
+
+                .featured-block-text {
+                color:#03305c;
+                margin-top: 20px;
+                transition: all 0.5s;
+                }
+                            
+                            
+            /*---------------------------------------
+            SOCIAL ICON               
+            -----------------------------------------*/
+            .social-icon {
+            margin: 0;
+            padding: 0;
+            }
+
+            .social-icon-item {
+            list-style: none;
+            display: inline-block;
+            vertical-align: top;
+            }
+
+            .social-icon-link {
+            background:#03305c;
+            border-radius: var(--border-radius-large);
+            color: var(--white-color);
+            font-size: var(--copyright-font-size);
+            display: block;
+            margin-right: 5px;
+            text-align: center;
+            width: 35px;
+            height: 35px;
+            line-height: 38px;
+            }
+
+            .social-icon-link:hover {
+                padding:6px;
+            background: #87C4FF;
+            color: var(--white-color);
+            }
+
+
+                            
+                .cta-section {
+                    position: relative;
+                    overflow: hidden;
+                }
+                
+                .cta-section::before {
+                    content: "";
+                    background-color: #03305c;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -100px;
+                    left: -30px;
+                    margin: auto;
+                    width: 200px;
+                    height: 200px;
+                }
+                
+                .cta-section::after {
+                    content: "";
+                    border: 20px solid var(--custom-btn-bg-color);
+                    border-radius: 50%;
+                    position: absolute;
+                    bottom: -100px;
+                    right: 0;
+                    left: 0;
+                    margin: auto;
+                    width: 150px;
+                    height: 150px;
+                }
+                
+                h5 {
+                    color: #03305c;
+                    font-size: var(--h5-font-size);
+                  }
+
+                    .custom-form button[type="submit"]:hover,
+                    .custom-form button[type="submit"]:focus {
+                    background:#03305c;
+                    border-color: transparent;
+                    }
+
+                .footer-menu-item{
+                    margin:10px;
+                }
+
+                .site-footer {
+                    background-color:#E0F4FF;
+                    padding-top: 70px;
+                  }
+
+                  .footer-menu-link {
+                    font-size: var(--p-font-size);
+                    color: black;
+                    font-weight: 600;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                    margin-bottom: 5px;
+                  }
+                  .footer-menu-link:hover {
+                    color:#03305c;
+                  }
+
+                  .site-footer-bottom {
+                    background-color: #03305c;
+                    position: relative;
+                    z-index: 2;
+                    margin-top: 70px;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                  }
+                    .carousel-control-next-icon:hover, 
+                    .carousel-control-prev-icon:hover {
+                    background-color:#03305c ;
+                    }
+        </style>
+    </head>
+       
+    <body id="section_1">
+
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-8 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-geo-alt me-2"></i>
+                            Sector C-8 Indrapuri Raisen Road Bhopal
+                        </p>
+
+                        <p class="d-flex mb-0">
+                            <i class="bi-envelope me-2"></i>
+
+                            <a href="mailto:info@company.com">
+                                info@techdigisoftware.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-youtube"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-whatsapp"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- NAVBAR  START-->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid" style="padding:10px;">
+                <a class="navbar-brand" href="#">
+                    <img src="{% static "img/logo.png" %}" class="logo img-fluid" alt="Techdigi" style="width:180px">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="font-size:20px;">Home</a>
+                        </li>
+                        <li class="nav-item" >
+                        <a class="nav-link" href="#section_2" style="font-size:20px;">About US</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#section_3" style="font-size:20px;">Service</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-size:20px;">Career</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn"><a class="btn_a" href="#section_6">Contact Us</a></button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- NAVBAR  END -->
+        <main>
+            <section class="hero-section hero-section-full-height">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 p-0">
+                            <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="{% static "img/slide/volunteer-helping-with-donation-box.png" %}" class="carousel-image img-fluid" alt="...">
+                                        
+                                        <div class="carousel-caption d-flex flex-column justify-content-end">
+                                            <h1>Digital <br> Marketing</h1>
+                                            
+                                            <p>Grow Your Business</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="{% static "img/slide/volunteer-selecting-organizing-clothes-donations-charity.png" %}" class="carousel-image img-fluid" alt="...">
+                                        
+                                        <div class="carousel-caption d-flex flex-column justify-content-end">
+                                            <h1>Mobile App <br> Development</h1>
+                                            
+                                            <p>High-performance native apps for iOS (iPhone and iPad) and Android platforms.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="{% static "img/slide/medium-shot-people-collecting-donations.png" %}" class="carousel-image img-fluid" alt="...">
+                                        
+                                        <div class="carousel-caption d-flex flex-column justify-content-end">
+                                            <h1>Web <br> Development</h1>
+                                            
+                                            <p>High-quality, customized website development</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#hero-slide" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12 text-center mx-auto">
+                            <h2 class="mb-5">Welcome to Techdigi</h2>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                            <div class="featured-block d-flex justify-content-center align-items-center">
+                                <a href="donate.html" class="d-block">
+                                    <img src="{% static "img/icons/social.png" %}" class="featured-block-image img-fluid" alt="loading" style="width:130px;">
+
+                                    <p class="featured-block-text"> <strong>Digital Marketing</strong></p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+                            <div class="featured-block d-flex justify-content-center align-items-center">
+                                <a href="donate.html" class="d-block">
+                                    <img src="{% static "img/icons/web.png" %}" class="featured-block-image img-fluid" alt="loading" style="width:130px;">
+
+                                    <p class="featured-block-text"><strong>Web Developing</strong></p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+                            <div class="featured-block d-flex justify-content-center align-items-center">
+                                <a href="donate.html" class="d-block">
+                                    <img src="{% static "img/icons/app.png" %}" class="featured-block-image img-fluid" alt="loading" style="width:130px;">
+
+                                    <p class="featured-block-text"> <strong>App Development</strong></p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                            <div class="featured-block d-flex justify-content-center align-items-center">
+                                <a href="donate.html" class="d-block">
+                                    <img src="{% static "img/icons/scholarship.png" %}" class="featured-block-image img-fluid" alt="">
+
+                                    <p class="featured-block-text"><strong>Grow your Business</strong></p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding section-bg" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <img src="{% static "img/about.jpg" %}" class="custom-text-box-image img-fluid" alt="loading" style="opacity: 0.6">
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="custom-text-box">
+                                <h2 class="mb-2">Our Story</h2>
+
+                                <h5 class="mb-3">TechDigi Software Pvt. Ltd.</h5>
+
+                                <p class="mb-0">TechDigi Software Pvt. Ltd. is specialized in designing, developing, and maintaining digital platforms for companies. Our companies employ a team of skilled software engineers, developers designers, and digital marketers. The primary goal of our company is to meet the unique development and marketing requirements of our clients. We offer a wide range of services, including web application development, mobile app development, enterprise software development, website, e-commerce platforms, digital marketing, and more.</p>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-lg-7 col-md-7 col-12">
+                                    <div class="custom-text-box mb-lg-0">
+                                        <h5 class="mb-3">Our Mission</h5>
+
+                                        <p>TechDigi Software Pvt Ltd is commited to deliver high high-quality website development, application development and digital marketing solutions to meet your business needs. We aimed to deliver the best service to our client.</p>
+
+                                        <ul class="custom-list mt-2">
+                                            <li class="custom-list-item d-flex">
+                                                <i class="bi-check custom-text-box-icon me-2"></i>
+                                                Responsive Website
+                                            </li>
+
+                                            <li class="custom-list-item d-flex">
+                                                <i class="bi-check custom-text-box-icon me-2"></i>
+                                                App Development
+                                            </li>
+
+                                            <li class="custom-list-item d-flex">
+                                                <i class="bi-check custom-text-box-icon me-2"></i>
+                                                Digital Marketing
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5 col-md-5 col-12">
+                                    <div class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0" style="padding:20px;">
+                                        <div class="counter-thumb"> 
+                                            <div class="d-flex">
+                                                <span class="counter-number" data-from="1" data-to="100" data-speed="1000"></span>
+                                                <span class="counter-number-text">+</span>
+                                            </div>
+
+                                            <span class="counter-text">Client</span>
+                                        </div> 
+
+                                        <div class="counter-thumb mt-4"> 
+                                            <div class="d-flex" style>
+                                                <span class="counter-number" data-from="1" data-to="500" data-speed="1000"></span>
+                                                <span class="counter-number-text">+</span>
+                                            </div>
+
+                                            <span class="counter-text">Projects</span>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="about-section section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+
+                                <div class="col-lg-6 col-md-5 col-12">
+                                    <img src="{% static "img/fem.avif" %}" class="about-image ms-lg-auto bg-light shadow-lg img-fluid" alt="">
+                                    </div>
+
+                                <div class="col-lg-5 col-md-7 col-12">
+                                    <div class="custom-text-block">
+                                        <h2 class="mb-0">Deepika</h2>
+
+                                        <p class="text-muted mb-lg-4 mb-md-4">Co-Founding Partner</p>
+
+                                        <p>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan </p>
+
+                                        
+
+                                        <ul class="social-icon mt-4">
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-twitter"></a>
+                                            </li>
+
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-facebook"></a>
+                                            </li>
+
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-instagram"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>  
+                        <div class="col-lg-6" style="margin-top:10px;">
+                            <div class="row">
+
+                                <div class="col-lg-6 col-md-5 col-12">
+                                    <img src="{% static "img/mal.jpg" %}" class="about-image ms-lg-auto bg-light shadow-lg img-fluid" alt="">
+                                </div>
+
+                                <div class="col-lg-5 col-md-7 col-12">
+                                    <div class="custom-text-block">
+                                        <h2 class="mb-0">sir</h2>
+
+                                        <p class="text-muted mb-lg-4 mb-md-4">Co-Founding Partner</p>
+
+                                        <p>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan </p>
+
+                                       
+
+                                        <ul class="social-icon mt-4">
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-twitter"></a>
+                                            </li>
+
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-facebook"></a>
+                                            </li>
+
+                                            <li class="social-icon-item">
+                                                <a href="#" class="social-icon-link bi-instagram"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section section-padding section-bg">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-lg-5 col-12 ms-auto">
+                            <h2 class="mb-0">Grow your<br> Business.</h2>
+                        </div>
+
+                        <div class="col-lg-5 col-12">
+                            <a href="#" class="me-4">More Details</a>
+
+                            <a href="#" class="custom-btn btn smoothscroll">Contact Us</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-padding" id="section_3">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center mb-4">
+                            <h2>Solution Built For You</h2>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                            <div class="custom-block-wrap" style="text-align: center;">
+                                <img src="{% static "img/icons/social.png" %}" class="custom-block-image img-fluid" alt="loading" style="width:150px; margin: 20px auto; display: block;">
+                        
+                                <div class="custom-block">
+                                    <div class="custom-block-body">
+                                        <h5 class="mb-3">Web Development</h5>
+                        
+                                        <p>As a website development IT company, we offer a range of services to cater to our clients' digital needs. Our goal is to deliver high-quality, customized website development solutions that drive digital success.</p>
+                                    </div>
+                        
+                                    <a href="donate.html" class="custom-btn btn" style="border: none; border-top: 1px solid #03305c;">Read More >> </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                            <div class="custom-block-wrap" style="text-align: center;">
+                                <img src="{% static "img/icons/app.png" %}" class="custom-block-image img-fluid" alt="loading" style="width:150px; margin: 20px auto; display: block;">
+
+                                <div class="custom-block">
+                                    <div class="custom-block-body">
+                                        <h5 class="mb-3">Mobile Application Development</h5>
+
+                                        <p>Our team specializes in building high-performance native apps for iOS (iPhone and iPad) and Android platforms. We develop cross-platform apps using frameworks like Flutter, ensuring wider reach and cost-effectiveness.</p>
+
+                                    </div>
+
+                                    <a href="donate.html" class="custom-btn btn" style=" border:none; border-top:1px solid #03305c;">Read More >></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="custom-block-wrap" style="text-align: center;">
+                                <img src="{% static "img/icons/web.png" %}" class="custom-block-image img-fluid" alt="loading" style="width:150px; margin: 20px auto; display: block;">
+
+                                <div class="custom-block">
+                                    <div class="custom-block-body">
+                                        <h5 class="mb-3">Digital Marketing</h5>
+
+                                        <p>With a team of experienced skilled professionals, we provide a comprehensive range of Digital Marketing services to maximize online visibility, drive targeted traffic, and generate measurable results via digital platforms.</p>
+
+                                        
+
+                                       
+                                    </div>
+
+                                    <a href="donate.html" class="custom-btn btn" style=" border:none; border-top:1px solid #03305c;">Read More >></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-padding section-bg">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <h2 class="mb-lg-3">Happy Customers</h2>
+                            
+                                <div id="testimonial-carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                           <div class="carousel-caption">
+                                                <h4 class="carousel-title">TechDigi Software Pvt. Ltd. has been supporting our business in both the creation and implementation of new and tailored application. They are reliable, thorough, smart, available, extremely good communicators and very friendly! We would recommend hiring TechDigi to anyone looking for a highly productive and solution driven team.</h4>
+                                                <small class="carousel-name"><span class="carousel-name-title">Sanyam Indurkhya </span></small>
+                                           </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class="carousel-caption">
+                                                <h4 class="carousel-title">TechDigi Software Pvt. Ltd. understood my vision and translated it into a beautiful and functional website. The development process was smooth, and their team was accommodating to any changes or additions we requested.I highly recommend TechDigi for their expertise in website development.</h4>
+                                                <small class="carousel-name"><span class="carousel-name-title">Ajay Maheshwari</span></small>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class="carousel-caption">
+                                                <h4 class="carousel-title">We approached TechDigi Software Pvt Ltd located in Bhopal, to develop a mobile application for our startup, and they delivered exceptional results. The team was incredibly responsive, always keeping us updated on the progress and addressing any concerns promptly.</h4>
+
+                                                <small class="carousel-name"><span class="carousel-name-title">Dr. Shrikant Verma </span></small>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class="carousel-caption">
+                                                <h4 class="carousel-title">Their team was highly skilled and knowledgeable, guiding us through every step of the process. They took the time to understand our business goals and target audience, resulting in an website that perfectly aligned with our needs. I am grateful to TechDigi Software Pvt Ltd for their professionalism and commitment to excellence. </h4>
+
+                                                <small class="carousel-name"><span class="carousel-name-title">Dr. Riteshwar Bhumarkar</span></small>
+                                           </div>
+                                        </div>
+                                    </div>
+                                          <ol class="carousel-indicators" style="top:0px; margin-bottom:0px;">
+                                               <li data-bs-target="#testimonial-carousel" data-bs-slide-to="0" class="active">
+                                                    <img src="{% static "img/avatar/sanyam.jfif" %}" class="img-fluid rounded-circle avatar-image" alt="avatar">
+                                               </li>
+
+                                               <li data-bs-target="#testimonial-carousel" data-bs-slide-to="1" class="">
+                                                    <img src="{% static "img/avatar/rishipackaging.jpg" %}" class="img-fluid rounded-circle avatar-image" alt="avatar">
+                                               </li>
+
+                                               <li data-bs-target="#testimonial-carousel" data-bs-slide-to="2" class="">
+                                                    <img src="{% static "img/avatar/shrikant.jpg" %}" class="img-fluid rounded-circle avatar-image" alt="avatar">
+                                               </li>
+                                               
+                                               <li data-bs-target="#testimonial-carousel" data-bs-slide-to="3" class="">
+                                                    <img src="{% static "img/avatar/ritesh.jpg" %}" class="img-fluid rounded-circle avatar-image" alt="avatar">
+                                               </li>
+                                          </ol>
+                                       
+                                        
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="contact-section section-padding" id="section_6">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-12 ms-auto mb-5 mb-lg-0">
+                            <div class="contact-info-wrap">
+                                <h2>Get in touch</h2>
+
+                                <div class="contact-image-wrap d-flex flex-wrap">
+                                    <img src="{% static "img/avatar/manager.png" %}" class="img-fluid avatar-image" alt="">
+
+                                    <div class="d-flex flex-column justify-content-center ms-3">
+                                        <p class="mb-0">Deepika </p>
+                                        <p class="mb-0"><strong>HR & Office Manager</strong></p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-info">
+                                    <h5 class="mb-3">Contact Infomation</h5>
+
+                                    <p class="d-flex mb-2">
+                                        <i class="bi-geo-alt me-2"></i>
+                                        Sector C-8 Indrapuri Raisen Road Bhopal
+                                    </p>
+
+                                    <p class="d-flex mb-2">
+                                        <i class="bi-telephone me-2"></i>
+
+                                        <a href="tel: +917223077806">
+                                            +91 7223077806
+                                        </a> <br>
+                                    </p>
+                                    <p class="d-flex mb-2">
+                                        <i class="bi-telephone me-2"></i>
+
+                                        <a href="tel: +91 9479850503">
+                                            +91 9479850503
+                                        </a>
+                                    </p>
+
+                                    <p class="d-flex">
+                                        <i class="bi-envelope me-2"></i>
+
+                                        <a href="mailto:info@yourgmail.com">
+                                            info@techdigisoftware.com
+                                        </a>
+                                    </p>
+
+                                    <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-12 mx-auto">
+                            <form class="custom-form contact-form" action="#" method="post" role="form">
+                                <h2>Contact form</h2>
+
+                                <p class="mb-4">Or, you can just send an email:
+                                    <a href="#">info@techdigisoftware.com</a>
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <input type="text" name="first-name" id="first-name" class="form-control" placeholder="First Name" required>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <input type="text" name="last-name" id="last-name" class="form-control" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+
+                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required>
+
+                                <textarea name="message" rows="5" class="form-control" id="message" placeholder="What can we help you?"></textarea>
+
+                                <button type="submit" class="form-control">Send Message</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12 mb-4">
+                        <img src="{% static "img/logo.png" %}" class="logo img-fluid" alt="logo" style="width:220px;">
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <h5 class="site-footer-title mb-3">Quick Links</h5>
+
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Blog </a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Clients</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Terms & Condition</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy Policy </a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">About </a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link"> Service</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Career </a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact </a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                        <h5 class="site-footer-title mb-3">Contact Infomation</h5>
+
+                        <p class="text-white d-flex mb-2">
+                            <i class="footer-menu-link bi-telephone me-2"></i>
+
+                            <a href="tel: 120-240-9600" class="footer-menu-link site-footer-link">
+                                120-240-9600
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <i class="footer-menu-link bi-envelope me-2"></i>
+
+                            <a href="mailto:info@yourgmail.com" class="site-footer-link footer-menu-link">
+                                donate@charity.org
+                            </a>
+                        </p>
+
+                        <p class=" footer-menu-link text-white d-flex mt-3" >
+                            <i class="footer-menu-link bi-geo-alt me-2"></i>
+                            <a href="#" class="footer-menu-link site-footer-link">
+                                Akershusstranda 20, 0150 Oslo, Norway
+                            </a>
+                            
+                        </p>
+
+                        <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <p class="copyright-text mb-0" style="font-size:16px;"> © 2022 Copyright:<a href="#">TechDigi Software Pvt Ltd</a><a href="https://templatemo.com" target="_blank"></a></p>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
+                            <ul class="social-icon">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-twitter"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-facebook"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-instagram"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-linkedin"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="https://youtube.com/templatemo" class="social-icon-link bi-youtube"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="{% static "js/jquery.min.js" %}"></script>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <script src="{% static "js/jquery.sticky.js" %}"></script>
+        <script src="{% static "js/click-scroll.js" %}"></script>
+        <script src="{% static "js/counter.js" %}"></script>
+        <script src="{% static "js/custom.js" %}"></script>
+
+    </body>
+</html>

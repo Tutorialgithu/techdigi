@@ -1,0 +1,12 @@
+.site-header{
+    background-color: #03305c;
+}
+
+.nav-link{
+    margin-left: 20px;
+    font-size: 20px;
+    font:bold;
+}
+.nav-link:hover{
+    color: #03305c;
+}
